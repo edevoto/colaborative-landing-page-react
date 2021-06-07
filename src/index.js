@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import reactDom from "react-dom";
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar";
+import Jumbotron from "./components/Jumbotron";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App () {
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  let propiedadesNavbar = {
+    titulo: "Start Boostrap",
+    home: "Home",
+    about: "About",
+    services: "Services",
+    contact: "Contact",
+  }
+
+
+
+
+  return (
+    <>
+    <Navbar/>
+    <Jumbotron/>
+    <Cards/>
+    <Footer/>
+    </>
+  )
+}
+
+reactDom.render(<App/>, document.querySelector("#root"));
