@@ -19,7 +19,10 @@ function App () {
     sctn4 = 'Contact'
     />
 
-    <Jumbotron/>
+    <Jumbotron title="A Warm Welcome!"
+        coments="This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+        buttonHref="https://desarrolloweb.com/manuales/programacion-orientada-objetos-dotnet.html"
+        buttonLabel="Call to action"/>
 
     <div className="row d-flex justify-content-center mx-1">
     <Cards
@@ -48,7 +51,7 @@ function App () {
     />
     </div>
     
-    <Footer/>
+    <Footer copyRight= "&copy;Copyright 2021, Colaboration."/>
     </>
   )
 }
