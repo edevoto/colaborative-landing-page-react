@@ -11,7 +11,13 @@ function App () {
 
   return (
     <>
-    <Navbar/>
+    <Navbar
+    title ='Start Bootstrap'
+    sctn1 = 'Home'
+    sctn2 = 'About'
+    sctn3 = 'Service'
+    sctn4 = 'Contact'
+    />
 
     <Jumbotron/>
 
